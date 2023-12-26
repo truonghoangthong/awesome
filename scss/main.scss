@@ -22,11 +22,12 @@ h1,h2,h3{
     &.sm-heading {
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
-        background: rgba(lighten($primary-color,2),0.5);
+        color: #0b0b0b;
+        background: rgba(lighten($primary-color1,2),0.5);
     }
 }
 a {
-    color: #eff2f3;
+    color: #0b0b0b;
     text-decoration: none;
 }
 header {
