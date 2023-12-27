@@ -124,7 +124,7 @@ body {
   line-height: 1.5; }
   /* line 14, scss/_config.scss */
   body#bg-img {
-    background: url(../imagine/background.jpg);
+    background: url(../imagine/background1.jpg);
     background-attachment: fixed;
     background-size: cover; }
     /* line 18, scss/_config.scss */
@@ -226,28 +226,80 @@ main {
   border-bottom: #f9dc03 5px solid; }
 
 /* line 94, scss/main.scss */
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+  /* line 98, scss/main.scss */
+  .projects img {
+    width: 100%;
+    border: 3px #f9dc03 solid; }
+    /* line 101, scss/main.scss */
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #b43838;
+      transition: all 1.5s ease-out; }
+
+/* line 110, scss/main.scss */
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  /* line 115, scss/main.scss */
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #5e5b3e;
+    color: set-text-color(#5e5b3e); }
+
+/* line 120, scss/main.scss */
+.btn-dark {
+  background: #a27676;
+  color: #fff; }
+
+/* line 125, scss/main.scss */
+.btn-light {
+  background: #508c9e;
+  color: #080808; }
+
+/* line 130, scss/main.scss */
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: black;
+  background: #787272;
   color: set-text-color(#fff);
   height: 60px; }
 
+@media screen and (min-width: 1171px) {
+  /* line 2, scss/_mobile.scss */
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  /* line 8, scss/_mobile.scss */
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
+
 @media screen and (max-width: 768px) {
-  /* line 10, scss/_mobile.scss */
+  /* line 14, scss/_mobile.scss */
   main {
     align-items: center;
     text-align: center; }
-    /* line 13, scss/_mobile.scss */
+    /* line 17, scss/_mobile.scss */
     main lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
-  /* line 18, scss/_mobile.scss */
+  /* line 22, scss/_mobile.scss */
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  /* line 31, scss/_mobile.scss */
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  /* line 30, scss/_mobile.scss */
+  /* line 37, scss/_mobile.scss */
   main#home h1 {
-    margin-top: 10vh; } }
+    margin-top: 10vh; }
+  /* line 40, scss/_mobile.scss */
+  .projects {
+    grid-template-columns: 1fr; } }

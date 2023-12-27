@@ -7,7 +7,7 @@ $primary-color1: #f0e9e9;
 $final-color: #f4cb01;
 $icon-color: #f2f1f4;
 $show-home-image: true;
-$home-image: url(../imagine/background.jpg);
+$home-image: url(../imagine/background1.jpg);
 $background-opacity: 0.9;
 @mixin background {
     @if $show-home-image{

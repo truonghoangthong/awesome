@@ -91,10 +91,46 @@ main {
     padding : 0.5rem;
     border-bottom: #f9dc03 5px solid;
 }
+.projects {
+    display : grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(3, 1fr);
+    img {
+        width: 100%;
+        border: 3px #f9dc03 solid;
+        &:hover {
+            opacity: 0.5;
+            border-color: #b43838;
+            @include easeOut
+        }
+
+    }
+}
+//Button styles
+.btn{
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    &:hover {
+        background: #5e5b3e;
+        color: set-text-color(#5e5b3e);
+    }
+}
+.btn-dark {
+    @extend .btn;
+    background: lighten(#976767,5);
+    color: #fff
+}
+.btn-light {
+    @extend .btn;
+    background: lighten(#477d8d,5);
+    color: #080808
+}
 #main-footer {
     text-align: center;
     padding: 1rem;
-    background: darken(#060606,10);
+    background: lighten(#5e5959,10);
     color : set-text-color(#fff);
     height :60px;   
 }
