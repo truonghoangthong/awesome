@@ -1,6 +1,6 @@
 @import 'config';
 @import 'menu';
-@import 'mobile';
+
 *{
     box-sizing: border-box;
 }
@@ -41,7 +41,7 @@ header {
 }
 main {
     padding: 4rem;
-    height : 100%;
+    min-height:calc(100vh- 60px);
     .icons {
         margin-top: 1rem;
         a{
@@ -59,3 +59,43 @@ main {
         }
     }
 }
+.about-info {
+    display: grid;
+    grid-gap:30px;
+    grid-template-areas: 
+        'bioimage bio bio'
+        'job1 job2 job3';
+    grid-template-columns: repeat(3,1fr);
+}
+.bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: #f9dc03 3px solid;
+}
+.bio {
+    grid-area: bio;
+    font-size: 1.5rem;
+}
+.job1 {
+    grid-area: job1;
+}
+.job2 {
+    grid-area: job2;
+}
+.job3 {
+    grid-area: job3;
+}
+.dude {
+    background : lighten(#f74f07,5);
+    padding : 0.5rem;
+    border-bottom: #f9dc03 5px solid;
+}
+#main-footer {
+    text-align: center;
+    padding: 1rem;
+    background: darken(#060606,10);
+    color : set-text-color(#fff);
+    height :60px;   
+}
+@import 'mobile';
