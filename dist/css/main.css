@@ -263,28 +263,28 @@ main {
       .boxes div:hover span {
         color: set-text-color(#fff); }
 
-/* line 134, scss/main.scss */
+/* line 133, scss/main.scss */
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem; }
-  /* line 139, scss/main.scss */
+  /* line 138, scss/main.scss */
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #5e5b3e;
     color: set-text-color(#5e5b3e); }
 
-/* line 144, scss/main.scss */
+/* line 143, scss/main.scss */
 .btn-dark {
   background: #a27676;
   color: #fff; }
 
-/* line 149, scss/main.scss */
+/* line 148, scss/main.scss */
 .btn-light {
   background: #508c9e;
   color: #080808; }
 
-/* line 154, scss/main.scss */
+/* line 153, scss/main.scss */
 #main-footer {
   text-align: center;
   padding: 1rem;
