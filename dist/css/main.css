@@ -192,7 +192,8 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio'
+ 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
 
 /* line 70, scss/main.scss */
@@ -313,7 +314,11 @@ main {
       margin-bottom: 1rem; }
   /* line 22, scss/_mobile.scss */
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage'
+ 'bio'
+ 'job1'
+ 'job2'
+ 'job3';
     grid-template-columns: 1fr; }
   /* line 31, scss/_mobile.scss */
   .projects {
